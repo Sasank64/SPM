@@ -1,0 +1,143 @@
+......................
+............................................................
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+v
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lab 1
+
+1. create a folder 
+2. right click -> open git bash
+3. git config --global user.name "SaiChandrahasKoneru"
+4. git config --global user.email 2000030410@kluniversity.in
+5. git init
+6. nano file1.txt -> add some text -> ctrl o, enter, ctrl x
+7. git add .
+8. gt commit -m " msg"
+9. git remote add origin https://github.com/SaiChandrahasKoneru/labpracice1.git
+10.git push -u origin master
+
+lab 2
+
+PUSH -> refer lab 1
+1. edit files in github
+2. git fetch -> git merger  (or) git pull
+branching
+1. $git branch -v ( to check the branches)
+2. $git branch branch1
+3. $git checkout branch1
+4. create new file in branch1
+5. $git add .
+6. $git commit -m "msg"
+7. $git push -u origin branch1
+8. $git checkout master
+9. $git merge
+10.$git push -u origin master
+11.$git branch -d branch1/$git branch -d branch2
+12.git push origin --delete branch1/git push origin --delete branch2
+
+lab 3
+
+bitbucket
+1. open bitbucket.org -> create new repository
+2. create a folder in local -> open git bash
+3. git config --global user.name "SaiChandrahasKoneru"
+4. git config --global user.email 2000030410@kluniversity.in
+5. git init
+6. nano file1.txt -> add text -> save
+7. $ssh-keygen -t rsa -C saichandrahaskoneru@gmail.com
+8. file manager -> c -> users -> chand -> .ssh -> rsa.pub file -> open -> copy key
+9. bitbucket -> ssh keys -> add key -> add the key and label it -> save
+10.git add .
+11.git commit -m "first commit"
+12.git remote add origin git@bitbucket.org:saichandrahas30410/labexam3.git
+13.git push -u -f origin master
+
+lab 4
+diff command
+1. edit the file1.txt and save
+2. $git diff (shows the differences)
+3. git log
+4. copy the numbers besides any two commits
+5. $git diff num1 num2 (shows difference between commits)
+6. git branch branch1 -> checkout
+7. add new file
+8. git add . 
+9. git commit -m "msg"
+10. git push -u -f origin branch1
+11. git checkout master
+12. git diff master branch1 ( shows difference between branches)
